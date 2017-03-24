@@ -22,14 +22,12 @@ The *union* function is a little more complicated: given two index  *(p, q)* 
 
 <div class="divider">
 </div>
-
-{{< highlight go >}}
+<pre>
+<code class="go">
 package dyncon
-
 type QuickFindUF struct {
    Elements []int
 }
-
 func initQuickFindUF(size int) *QuickFindUF {
    qfUF := QuickFindUF{Elements: make([]int, size)}
    for i := range qfUF.Elements {
@@ -37,11 +35,9 @@ func initQuickFindUF(size int) *QuickFindUF {
    }
    return &qfUF
 }
-
 func (qfUF QuickFindUF) connected(p, q int) bool {
    return qfUF.Elements[p] == qfUF.Elements[q]
 }
-
 func (qfUF *QuickFindUF) union(p, q int) {
    pid := qfUF.Elements[p]
    qid := qfUF.Elements[q]
@@ -51,8 +47,8 @@ func (qfUF *QuickFindUF) union(p, q int) {
       }
    }
 }
-{{< / highlight >}}
-
+</code>
+</pre>
 
 By evaluating this algorithm by the number of times it access the array we can assume the following measurements:
 
@@ -60,7 +56,7 @@ By evaluating this algorithm by the number of times it access the array we can a
 | Algorithm | initQuickFindUF | connected | union |
 |:--------|:-------:|--------:|--------:|
 | Quick-Find | N | 1 | N |
-|=====
+|
 
 >The *union* function costs N accesses to the array; if we have N union operations this algorithm will take quadratic time complexity.
 
