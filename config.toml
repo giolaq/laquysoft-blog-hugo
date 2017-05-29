@@ -18,7 +18,7 @@ defaultContentLanguage = "en-us"
 title = "Laquysoft"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "laquysoft"
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-44226072-1"
 paginate = 7
 canonifyurls = true
 
