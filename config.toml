@@ -12,11 +12,16 @@ theme = "aerial"
   favicon = "favicon.ico"
 
 
-  [[params.social]]
-    medium = "Linkedin"
-    icon = "linkedin"
-    link = "https://www.linkedin.com/in/glaquidara/"
+[[params.social]]
+  medium = "Linkedin"
+  icon = "linkedin"
+  link = "https://www.linkedin.com/in/glaquidara/"
 
+
+[[params.social]]
+  medium = "Medium"
+  icon = "medium"
+  link = "https://medium.com/@joaolaq"
 
 [[params.social]]
   medium = "Stack Overflow"
